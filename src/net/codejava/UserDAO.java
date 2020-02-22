@@ -10,9 +10,9 @@ import java.sql.SQLException;
 public class UserDAO {
 	Connection connection;
 	public UserDAO() {
-		String jdbcURL = "jdbc:mysql://localhost:8889/bookshop";
+		String jdbcURL = "jdbc:mysql://localhost:3306/bookshop";
 		String dbUser = "root";
-		String dbPassword = "root";
+		String dbPassword = "";
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection(jdbcURL, dbUser, dbPassword);
